@@ -41,7 +41,7 @@ add_user_to_docker_group()
 {
     sudo groupadd docker
     sudo usermod -aG docker $USER
-    newgrp docker
+    # newgrp docker
 }
 
 pull_torproxy()
