@@ -7,8 +7,8 @@ deploy()
         echo Start container torproxy at port $port
         docker run -it \
             -p $port:8118 \
-            -e TOR_NewCircuitPeriod=120 \
-            -e TOR_MaxCircuitDirtiness=120 \
+            -e TOR_NewCircuitPeriod=600 \
+            -e TOR_MaxCircuitDirtiness=600 \
             -d dperson/torproxy
     done
 }
